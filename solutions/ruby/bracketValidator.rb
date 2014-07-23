@@ -18,6 +18,7 @@ openers_to_closers_map = {
     '{' : '}',
     '[' : ']'
 }
+
 openers = openers_to_closers_map.keys()
 closers = openers_to_closers_map.values()
 
