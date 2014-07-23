@@ -1,9 +1,31 @@
 /* 
  * Write an extended stack class that has a function getLargest() for returning the largest element in the stack.
+ *
+ * Gotchas
+ * What if we push several items in increasing numeric order (e.g. 1,2,3,4...), so that there is a new largest after each push()? What if we then pop() each of these items off, so that there is a new largest after each pop()? Your algorithm shouldn't pay a steep cost in these edge cases.
+ *
+ * You should be able to get a runtime of O(1) for push(), pop(), and getLargest().
  */
 
-var getLargest = function ( ) {
-  // do stuff
+var Stack = function () {
+  this.storage  = {};
+  this.size     = 0;
+}
+
+Stack.prototype.push = function () {
+
+};
+
+Stack.prototype.peek = function () {
+
+};
+
+Stack.prototype.pop = function () {
+
+};
+
+Stack.prototype.getLargest = function ( ) {
+
 };
 
 
