@@ -10,6 +10,12 @@
  * and it keeps running out of memory because visited is getting so huge.
  *
  * How can I trim down the amount of space taken up by visited?
+ *
+ * Gotchas: 
+ * The strategy I came up with doesn't take a hit on runtime.
+ *
+ * Replacing common substrings like ".com" and "www" with characters that aren't allowed in URLs definitely wins us something, but we can do even better. 
+ * How can we even further exploit overlaps or shared prefixes between URLs?
  */
 
 
