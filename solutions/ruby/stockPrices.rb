@@ -12,7 +12,7 @@
 =end
 
 min_price = stockPricesYesterday[0]
-max_profit = 0
+max_profit = 0  q
 for time in range(len(stockPricesYesterday)):
   current_price = stockPricesYesterday[time]
   min_price = min(min_price, current_price)
