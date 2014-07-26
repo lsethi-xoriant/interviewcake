@@ -10,6 +10,8 @@
  * Gotchas
  * It is not sufficient to simply take the difference between the highest price and the lowest price, 
  * because the highest price may come before the lowest price. You must buy before you sell.
+ *
+ * You can do this in O(n) time.
  */
 
 
@@ -73,9 +75,9 @@
  * We'll start our max profit at $0. As we're iterating, how do we know if we've found a new max profit?
  *
  * At each iteration, our max_profit is either:
+ *   1) the same as the max_profit at the last time step, or
+ *   2) the best profit we can get by selling at the current_price
  *
- * the same as the max_profit at the last time step, or
- * the best profit we can get by selling at the current_price
  * How do we know when we have case (2)?
  * The best profit we can get by selling at the current_price is simply the difference 
  * between the current_price and the min_price to the left of it. 
